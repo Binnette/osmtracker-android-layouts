@@ -1,4 +1,5 @@
 <metadata>
     <option iso="en" name="English">Predefined buttons for bike contributions</option>
+    <option iso="fr" name="Français">Boutons prédéfinis pour les contributions à vélo</option>
     <github username="binnette" repo="osmtracker-android-layouts" branch="master" />
 </metadata>
