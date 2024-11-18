@@ -1,0 +1,83 @@
+<layouts>
+    <!-- Disposition principale, première à être affichée -->
+    <layout name="root">
+        <!-- Boutons d'action spéciaux -->
+        <row>
+            <button type="voicerec" icon="bike_icons/voicerec.png"/>
+            <button type="picture" icon="bike_icons/picture.png"/>
+            <button type="textnote" icon="bike_icons/textnote.png"/>
+        </row>
+
+        <row>
+            <!-- amenity=drinking_water -->
+            <button type="tag" label="Eau potable" icon="bike_icons/drinking_water.png" />
+            <!-- amenity=toilets -->
+            <button type="tag" label="Toilettes" icon="bike_icons/toilets.png" />
+            <!-- tourism=picnic_site -->
+            <button type="tag" label="Table de pique-nique" icon="bike_icons/picnic_table.png" />
+        </row>
+
+        <row>
+            <!-- tourism=viewpoint -->
+            <button type="tag" label="Point de vue" icon="bike_icons/viewpoint.png" />
+            <!-- amenity=bench -->
+            <button type="tag" label="Banc" icon="bike_icons/bench.png" />
+            <!-- historic=wayside_cross -->
+            <button type="tag" label="Calvaire" icon="bike_icons/wayside_cross.png" />
+        </row>
+
+        <!-- Boutons de catégorie principale des POI -->
+        <row>
+            <button type="page" label="POI Vélo" icon="bike_icons/bike.png" targetlayout="bicycle"/>
+            <button type="page" label="POI Divers" icon="bike_icons/misc.png" targetlayout="misc"/>
+        </row>
+    </layout>
+   
+    <!-- Disposition des POI liés au vélo -->
+    <layout name="bicycle">
+        <row>
+            <!-- amenity=bicycle_repair_station + service:bicycle:pump=yes -->
+            <button type="tag" label="Pompe" icon="bike_icons/bike_pump.png" />
+            <!-- amenity=bicycle_repair_station -->
+            <button type="tag" label="Station de réparation" icon="bike_icons/bike_repair_station.png" />
+            <!-- amenity=charging_station + bicycle=yes -->
+            <button type="tag" label="Station de recharge" icon="bike_icons/bike_charging_station.png" />
+        </row>
+        <row>
+            <!-- shop=bicycle -->
+            <button type="tag" label="Magasin de vélos" icon="bike_icons/bike_shop.png" />
+            <!-- amenity=bicycle_rental -->
+            <button type="tag" label="Location de vélos" icon="bike_icons/bike_rental.png" />
+            <!-- amenity=monitoring_station + monitoring:bicycle=yes -->
+            <button type="tag" label="Station de comptage vélo" icon="bike_icons/bike_monitoring_station.png" />
+        </row>
+        <row>
+            <!-- barrier=bus_trap -->
+            <button type="tag" label="Piège à bus" icon="bike_icons/bus_trap.png" />
+            <!-- cycleway=asl -->
+            <button type="tag" label="Ligne d'arrêt avancée" icon="bike_icons/advanced_stop_line.png" />
+            <!-- barrier=cycle_barrier -->
+            <button type="tag" label="Barrière cyclable" icon="bike_icons/cycle_barrier.png" />
+        </row>
+        <row>
+            <!-- highway=cycleway -->
+            <button type="tag" label="Début de la piste cyclable" icon="bike_icons/cycleway_start.png" />
+            <!-- highway=cycleway -->
+            <button type="tag" label="Fin de la piste cyclable" icon="bike_icons/cycleway_end.png" />
+        </row>
+    </layout>
+    
+    <!-- Disposition des POI divers -->
+    <layout name="misc">
+        <row>
+            <!-- amenity=shelter -->
+            <button type="tag" label="Abri" icon="bike_icons/shelter.png" />
+        </row><row>
+            <!-- tourism=information information=map -->
+            <button type="tag" label="Carte" icon="bike_icons/map.png" />
+        </row><row>
+            <!-- leisure=playground -->
+            <button type="tag" label="Aire de jeux" icon="bike_icons/playground.png" />
+        </row>
+    </layout>
+</layouts>

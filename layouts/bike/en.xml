@@ -1,11 +1,11 @@
 <layouts>
-    <!--Main layout, first to be displayed-->
+    <!-- Main layout, first to be displayed -->
     <layout name="root">
-        <!--Special action Buttons-->
+        <!-- Special action buttons -->
         <row>
             <button type="voicerec" icon="bike_icons/voicerec.png"/>
             <button type="picture" icon="bike_icons/picture.png"/>
-            <button type="textnote" icon="bike_icons/textnotec.png"/>
+            <button type="textnote" icon="bike_icons/textnote.png"/>
         </row>
 
         <row>
@@ -26,14 +26,14 @@
             <button type="tag" label="Wayside cross" icon="bike_icons/wayside_cross.png" />
         </row>
 
-        <!--Primary POI category buttons-->
+        <!-- Primary POI category buttons -->
         <row>
             <button type="page" label="Bike POIs" icon="bike_icons/bike.png" targetlayout="bicycle"/>
             <button type="page" label="Misc POIs" icon="bike_icons/misc.png" targetlayout="misc"/>
         </row>
     </layout>
    
-    <!--Bicycle-related POIs layout-->
+    <!-- Bicycle-related POIs layout -->
     <layout name="bicycle">
         <row>
             <!-- amenity=bicycle_repair_station + service:bicycle:pump=yes -->
@@ -42,7 +42,6 @@
             <button type="tag" label="Bike repair station" icon="bike_icons/bike_repair_station.png" />
             <!-- amenity=charging_station + bicycle=yes -->
             <button type="tag" label="Charging station" icon="bike_icons/bike_charging_station.png" />
-
         </row>
         <row>
             <!-- shop=bicycle -->
@@ -68,7 +67,7 @@
         </row>
     </layout>
     
-    <!--Miscellaneous POIs layout-->
+    <!-- Miscellaneous POIs layout -->
     <layout name="misc">
         <row>
             <!-- amenity=shelter -->
